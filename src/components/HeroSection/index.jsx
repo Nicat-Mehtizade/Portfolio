@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+
   return (
-    <div className={`${styles.hero} flex items-center`}>
-      <div className="max-w-[1250px] mx-auto w-full flex items-center justify-between">
+    <div
+      className={`${styles.hero} flex items-center pt-40 md:pt-0`}
+    >
+      <div className="max-w-[1250px] mx-auto w-full flex flex-col md:flex-row items-center justify-between">
         <div>
-          <div className="text-white text-4xl font-semibold flex items-center mb-4">
+          <div className="text-white text-4xl font-semibold flex items-center justify-center md:justify-start mb-4">
             Hi There!{" "}
             <motion.h1
               initial={{ rotate: 0 }}
@@ -23,10 +26,10 @@ const Hero = () => {
               👋🏻
             </motion.h1>
           </div>
-          <p className="text-white text-4xl font-semibold mb-10 ">
+          <p className="text-white text-4xl text-center md:text-start font-semibold mb-10 ">
             I'M <span className="text-[#6839ea]">NIJAT MEHDIZADEH</span>
           </p>
-          <p className="text-white text-2xl font-semibold">
+          <p className="text-white text-2xl font-semibold text-center md:text-start">
             <span className="mr-2">I'm a</span>
             <span className="text-[#6839ea]">
               <Typewriter

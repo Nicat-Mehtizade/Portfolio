@@ -29,7 +29,7 @@ const HomeInfoSection = () => {
         >
           LET ME <span className="text-[#6839ea]">INTRODUCE</span> MYSELF
         </motion.h1>
-        <div className="flex items-center justify-between mb-10">
+        <div className="flex flex-col md:flex-row gap-5 items-center justify-between mb-10">
           <div className="flex flex-col gap-5 text-xl font-semibold w-[72%]">
             <motion.p
               initial={{ opacity: 0, x: -30 }}

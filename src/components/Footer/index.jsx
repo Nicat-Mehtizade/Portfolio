@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className="bg-black py-5">
       <div className="max-w-[1280px] mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-2 items-center justify-between">
           <p className="text-white text-lg">Developed by Nijat Mehdizadeh</p>
           <div className="flex items-center gap-6">
             <button onClick={handleGithub} className="cursor-pointer">
