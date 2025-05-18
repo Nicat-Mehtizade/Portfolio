@@ -5,6 +5,7 @@ import { VscVscode } from "react-icons/vsc";
 import { SiPostman } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 import GitHubCalendar from "react-github-calendar";
+import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
@@ -25,12 +26,22 @@ const About = () => {
         <div className="bg-gradient-to-br md:pt-0 from-[#141023] to-[#201732] ">
           <div className="max-w-[1250px] mx-auto">
             <div className="flex flex-col justify-center pt-15">
-              <h1 className="text-center text-4xl text-white font-semibold mb-8">
+              <motion.h1
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-center text-4xl text-white font-semibold mb-8"
+              >
                 Know Who <span className="text-[#6839ea]">I'M</span>
-              </h1>
+              </motion.h1>
               <div className="flex flex-col md:flex-row justify-between items-center gap-5 ">
                 <div>
-                  <p className="text-white md:text-xl mb-6">
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="text-white md:text-xl mb-6"
+                  >
                     Hi Everyone, I am{" "}
                     <span className="text-[#6839ea] italic">
                       Nijat Mehdizadeh
@@ -55,51 +66,95 @@ const About = () => {
                     technical skills, building real-world projects, and creating
                     functional, user-friendly web experiences that combine both
                     creativity and performance.
-                  </p>
-                  <p className="text-white md:text-xl mb-5">
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="text-white md:text-xl mb-5"
+                  >
                     Apart from coding, some other activities that I love to do!
-                  </p>
-                  <div className="pl-10">
-                    <p className="text-white flex items-center gap-1 md:text-xl">
+                  </motion.p>
+                  <div className="pl-10 mb-5">
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.7 }}
+                      className="text-white flex items-center gap-1 md:text-xl"
+                    >
                       <LiaHandPointRightSolid />
                       Listening to Music
-                    </p>
-                    <p className="text-white flex items-center gap-1 md:text-xl">
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.8 }}
+                      className="text-white flex items-center gap-1 md:text-xl"
+                    >
                       <LiaHandPointRightSolid />
                       Playing Games
-                    </p>
-                    <p className="text-white flex items-center gap-1 md:text-xl">
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.9 }}
+                      className="text-white flex items-center gap-1 md:text-xl"
+                    >
                       <LiaHandPointRightSolid />
                       Spending Quality Time With My Friends
-                    </p>
+                    </motion.p>
                   </div>
                 </div>
-                <img
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
                   className="w-[300px] md:w-[500px] h-[200px] md:h-auto mb-20 md:mb-0"
                   src="https://soumyajit.vercel.app/static/media/about.aee0f771fbfc1e7b8fa8.png"
                   alt=""
                 />
               </div>
             </div>
-            <div className="flex justify-center mb-10">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className="flex justify-center mb-10"
+            >
               <div className="bg-[#201732] border border-[#6839ea] rounded-lg p-6 max-w-2xl">
-                <h3 className="text-white text-2xl font-medium mb-4 text-center">
+                <motion.h3
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: [-20, 10, 0] }}
+                  transition={{ duration: 0.5, delay: 1.1 }}
+                  className="text-white text-2xl font-medium mb-4 text-center"
+                >
                   My Development{" "}
                   <span className="text-[#6839ea]">Philosophy</span>
-                </h3>
-                <p className="text-white text-lg">
+                </motion.h3>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 1.2 }}
+                  className="text-white text-lg"
+                >
                   I believe in writing clean, maintainable code and staying
                   up-to-date with the latest web technologies and best
                   practices. My goal is to create responsive, accessible, and
                   performant web applications that provide exceptional user
                   experiences.
-                </p>
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
             <div>
-              <h1 className="text-center text-4xl text-white font-semibold mb-12">
+              <motion.h1
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="text-center text-4xl text-white font-semibold mb-12"
+              >
                 Professional <span className="text-[#6839ea]">Skillset</span>
-              </h1>
+              </motion.h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mb-10">
                 {skills.map((item, index) => (
@@ -111,25 +166,59 @@ const About = () => {
                 ))}
               </div>
 
-              <h1 className="text-4xl text-white font-semibold text-center mb-3">
+              <motion.h1
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="text-4xl text-white font-semibold text-center mb-3"
+              >
                 <span className="text-[#6839ea]">Tools </span>I use
-              </h1>
+              </motion.h1>
               <div className="flex flex-col md:flex-row  gap-5 items-center justify-center">
-                <div className="border flex justify-center items-center  border-[#6839ea] rounded-lg py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]">
+                <motion.div
+                  initial={{ y: 30 }}
+                  whileInView={{ y: 0 }}
+                  transition={{ duration: 0.2 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="border flex justify-center items-center  border-[#6839ea] rounded-lg py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]"
+                >
                   <VscVscode />
-                </div>
-                <div className="border flex justify-center items-center border-[#6839ea] rounded-lg  py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]">
+                </motion.div>
+                <motion.div
+                  initial={{ y: 30 }}
+                  whileInView={{ y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="border flex justify-center items-center border-[#6839ea] rounded-lg  py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]"
+                >
                   <SiPostman />
-                </div>
-                <div className="border flex justify-center items-center border-[#6839ea] rounded-lg  py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]">
+                </motion.div>
+                <motion.div
+                  initial={{ y: 30 }}
+                  whileInView={{ y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="border flex justify-center items-center border-[#6839ea] rounded-lg  py-5 px-15 transition duration-500 text-white text-7xl hover:scale-110 hover:border-2 hover:shadow-[0_0_12px_#6839ea]"
+                >
                   <IoLogoVercel />
-                </div>
+                </motion.div>
               </div>
               <div className="text-white flex flex-col items-center py-10">
-                <h2 className="text-2xl mb-4">GitHub Contributions</h2>
-                <div className="calendar-wrapper w-full max-w-[880px] p-4 rounded-lg bg-[#1e1e2f] shadow-lg">
+                <motion.h2
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="text-3xl mb-4 font-semibold">GitHub <span className="text-[#6839ea]">Contributions</span></motion.h2>
+                <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="calendar-wrapper w-full max-w-[880px] p-4 rounded-lg bg-[#1e1e2f] shadow-lg">
                   <GitHubCalendar username="Nicat-Mehtizade" />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

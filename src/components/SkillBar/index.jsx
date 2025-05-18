@@ -13,8 +13,9 @@ const SkillBar = ({ skill, percentage }) => {
         <motion.div
           className="bg-[#6839ea] h-2.5 rounded-full"
           initial={{ width: 0 }}
-          animate={{ width: `${percentage}%` }}
+          whileInView={{ width: `${percentage}%` }}
           transition={{ duration: 1, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
         />
       </div>
     </div>
