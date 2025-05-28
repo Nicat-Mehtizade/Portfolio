@@ -11,11 +11,11 @@ const About = () => {
   const skills = [
     { skill: "HTML", percentage: 100 },
     { skill: "CSS", percentage: 95 },
-    { skill: "JavaScript", percentage: 80 },
-    { skill: "React", percentage: 90 },
-    { skill: "TypeScript", percentage: 65 },
+    { skill: "JavaScript", percentage: 75 },
+    { skill: "React", percentage: 85 },
+    { skill: "TypeScript", percentage: 55 },
     { skill: "Tailwind CSS", percentage: 95 },
-    { skill: "Next.js", percentage: 40 },
+    { skill: "Next.js", percentage: 30 },
     { skill: "Git", percentage: 50 },
   ];
 

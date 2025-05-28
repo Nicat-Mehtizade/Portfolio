@@ -42,7 +42,7 @@ const Header = () => {
           <NavLink to={"/"}>
             <p className="text-[#6839ea] text-3xl font-bold">Nm.</p>
           </NavLink>
-          <nav className="hidden md:flex gap-14 items-center text-white">
+          <nav className="hidden lg:flex gap-14 items-center text-white">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -101,7 +101,7 @@ const Header = () => {
           </nav>
           <button
             onClick={() => setBurger(!burger)}
-            className="text-[#6839ea] text-3xl block md:hidden"
+            className="text-[#6839ea] text-3xl block lg:hidden"
           >
             {burger ? <IoClose /> : <GiHamburgerMenu />}
           </button>
@@ -109,7 +109,7 @@ const Header = () => {
         <AnimatePresence>
           {burger && (
             <div className="">
-              <nav className="absolute top-17 backdrop-blur-md bg-[#191827]/70 shadow-md w-full flex flex-col md:hidden gap-14 items-center text-white">
+              <nav className="absolute top-17 backdrop-blur-md bg-[#191827]/70 shadow-md w-full flex flex-col lg:hidden gap-14 items-center text-white">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
