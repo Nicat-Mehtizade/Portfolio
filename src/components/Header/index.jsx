@@ -5,7 +5,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { FaCodeBranch } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./index.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -15,6 +15,7 @@ import { MdContactSupport } from "react-icons/md";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [burger, setBurger] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +30,21 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (burger && menuRef.current && !menuRef.current.contains(event.target)) {
+        setBurger(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [burger]);
+  
   return (
     <div
       className={`sticky top-0 w-full z-50 transition-all duration-300 ${
@@ -108,7 +124,7 @@ const Header = () => {
         </div>
         <AnimatePresence>
           {burger && (
-            <div className="">
+            <div ref={menuRef}>
               <nav className="absolute top-17 backdrop-blur-md bg-[#191827]/70 shadow-md w-full flex flex-col lg:hidden gap-14 items-center text-white">
                 <motion.div
                   initial={{ opacity: 0 }}

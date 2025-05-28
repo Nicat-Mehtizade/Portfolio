@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="relative z-10">
         <div className="bg-gradient-to-br from-[#141023] to-[#201732]">
           <div className="max-w-[1250px] mx-auto">
-            <div className="py-10">
+            <div className="py-10 px-3">
               <motion.h1
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}

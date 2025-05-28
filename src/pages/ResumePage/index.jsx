@@ -18,7 +18,7 @@ const ResumePage = () => {
               <LuDownload />
               Download CV
             </a>
-            <div className="w-full">
+            <div className="w-full px-3">
               <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                 <Viewer fileUrl="/docs/Nijat-Mehtizadeh-CV.pdf" />;
               </Worker>

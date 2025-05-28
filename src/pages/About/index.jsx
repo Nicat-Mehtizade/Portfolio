@@ -24,7 +24,7 @@ const About = () => {
       <StarsBackground />
       <div className="relative z-10">
         <div className="bg-gradient-to-br md:pt-0 from-[#141023] to-[#201732] ">
-          <div className="max-w-[1250px] mx-auto">
+          <div className="max-w-[1250px] mx-auto px-5">
             <div className="flex flex-col justify-center pt-15">
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
