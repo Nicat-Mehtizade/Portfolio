@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="public/ReadMe Photo.png" alt="Portfolio Screenshot" width="600"/>
+  <img src="public/ReadMe Photo.png" alt="Portfolio Screenshot"/>
 </div>
 
 <div align="left">
