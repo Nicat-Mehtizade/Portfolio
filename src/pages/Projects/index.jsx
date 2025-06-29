@@ -1,6 +1,7 @@
 import StarsBackground from "../../components/StarsBackground";
 import ProjectCard from "../../components/ProjectCard";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -27,6 +28,47 @@ const Projects = () => {
                 Here are a few projects I've worked on recently.
               </motion.p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-5">
+                <div className="shadow-[0_0_6px_#6839ea] p-3 rounded-lg transition duration-500 hover:scale-104 hover:shadow-[0_0_18px_#6839ea]">
+                  <img
+                    className="w-[350px] mx-auto"
+                    src="./img14.png"
+                    alt="Project Image"
+                  />
+                  <div className="flex flex-col min-h-[250px]  items-center">
+                    <motion.p
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5 }}
+                      viewport={{ once: true }}
+                      className="text-white font-semibold text-lg"
+                    >
+                      iTicket Clone
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      viewport={{ once: true }}
+                      className="text-white font-semibold"
+                    >
+                      iTicket is a modern and responsive web platform that
+                      allows users to browse events, select seats, and purchase
+                      tickets online. The project is built using React, Node.js,
+                      Express, and MongoDB. It also features an admin panel for
+                      managing events and seating arrangements.
+                    </motion.p>
+                    <div className="flex items-center gap-5 pb-2 mt-auto">
+                      <a
+                        href="https://github.com/Nicat-Mehtizade/Final-Project.git"
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-lg py-2 px-3 bg-[#6839ea] text-white cursor-pointer font-semibold transition duration-300 hover:bg-[#393cea]"
+                      >
+                        <FaGithub />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -97,7 +139,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.1 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -115,7 +157,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, delay: 0.2 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -133,7 +175,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -151,7 +193,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.1 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -171,7 +213,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, delay: 0.2 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -189,7 +231,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -207,7 +249,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.1 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -225,7 +267,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, delay: 0.2 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -243,7 +285,7 @@ const Projects = () => {
                   />
                 </motion.div>
                 <motion.div
-                 initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                   viewport={{ once: true, amount: 0.2 }}
