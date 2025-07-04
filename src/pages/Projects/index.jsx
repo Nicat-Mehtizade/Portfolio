@@ -135,25 +135,7 @@ const Projects = () => {
                     githubLink={
                       "https://github.com/Nicat-Mehtizade/Portfolio-PF102.git"
                     }
-                    demoLink={"http://127.0.0.1:5500/23-MiniProject/index.html"}
-                  />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.1 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                >
-                  <ProjectCard
-                    image={"img9-removebg-preview.png"}
-                    title={"Where in the world?"}
-                    description={
-                      "This is a fully responsive project with a beautiful design. It includes search, sorting, and light/dark mode features. Each country has its own details page, and users can navigate to border countries via clickable tags. The data is fetched from a REST API.You can find it as the 21st project in my GitHub repository."
-                    }
-                    githubLink={
-                      "https://github.com/Nicat-Mehtizade/Portfolio-PF102.git"
-                    }
-                    demoLink={"https://pf-102-p72v.vercel.app/"}
+                    demoLink={"https://eventix-five.vercel.app/"}
                   />
                 </motion.div>
                 <motion.div
